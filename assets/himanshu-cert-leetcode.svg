@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad_LC-KNIGHT-2026-HY" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Gold Gradient for Seal & Borders -->
+    <linearGradient id="goldGrad_LC-KNIGHT-2026-HY" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <linearGradient id="primaryGrad_LC-KNIGHT-2026-HY" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="shadow_LC-KNIGHT-2026-HY" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="960" height="620" fill="url(#bgGrad_LC-KNIGHT-2026-HY)" rx="12"/>
+
+  <!-- Outer Elegant Border -->
+  <rect x="20" y="20" width="920" height="580" rx="8" fill="none" stroke="url(#goldGrad_LC-KNIGHT-2026-HY)" stroke-width="4"/>
+  <rect x="28" y="28" width="904" height="564" rx="6" fill="none" stroke="#ca8a04" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Guilloche Corner Accents -->
+  <g stroke="url(#goldGrad_LC-KNIGHT-2026-HY)" stroke-width="1.5" fill="none">
+    <path d="M 28 60 L 60 28 M 28 75 L 75 28 M 28 90 L 90 28"/>
+    <path d="M 932 60 L 900 28 M 932 75 L 885 28 M 932 90 L 870 28"/>
+    <path d="M 28 560 L 60 592 M 28 545 L 75 592 M 28 530 L 90 592"/>
+    <path d="M 932 560 L 900 592 M 932 545 L 885 592 M 932 530 L 870 592"/>
+  </g>
+
+  <!-- Top Accent Bar -->
+  <rect x="180" y="32" width="600" height="4" fill="url(#goldGrad_LC-KNIGHT-2026-HY)" rx="2"/>
+
+  <!-- Organization Logo & Header -->
+  <g text-anchor="middle">
+    <text x="480" y="70" font-family="'Georgia', serif" font-size="20" font-weight="bold" letter-spacing="3" fill="#ca8a04">
+      LEETCODE
+    </text>
+    <text x="480" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="#64748b">
+      LEETCODE ALGORITHM COMPETENCY
+    </text>
+    <text x="480" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" letter-spacing="1" fill="#94a3b8">
+      Data Structures & Algorithms Problem Solving Division
+    </text>
+
+    <!-- Certificate Award Title -->
+    <text x="480" y="152" font-family="'Georgia', serif" font-size="26" font-weight="bold" letter-spacing="4" fill="url(#primaryGrad_LC-KNIGHT-2026-HY)">
+      KNIGHT BADGE & 200+ SOLVED
+    </text>
+
+    <line x1="320" y1="168" x2="640" y2="168" stroke="url(#goldGrad_LC-KNIGHT-2026-HY)" stroke-width="2"/>
+    <circle cx="480" cy="168" r="4" fill="#d97706"/>
+
+    <!-- Body Introduction Text -->
+    <text x="480" y="205" font-family="'Georgia', serif" font-size="14" font-style="italic" fill="#475569">
+      This recognition is proudly awarded to Himanshu Yadav for exceptional problem-solving rigor and achieving
+    </text>
+
+    <!-- Recipient Name -->
+    <text x="480" y="260" font-family="'Georgia', serif" font-size="38" font-weight="bold" letter-spacing="1" fill="#0f172a">
+      Himanshu Yadav
+    </text>
+    <line x1="280" y1="274" x2="680" y2="274" stroke="url(#goldGrad_LC-KNIGHT-2026-HY)" stroke-width="1.5"/>
+
+    <!-- Course / Achievement Name -->
+    <text x="480" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#64748b">
+      FOR OUTSTANDING PERFORMANCE IN
+    </text>
+    <text x="480" y="358" font-family="'Georgia', serif" font-size="24" font-weight="bold" fill="#ca8a04">
+      Knight Badge & 200+ DSA Problems Solved in Java
+    </text>
+
+    <!-- Description Paragraph -->
+    <text x="480" y="396" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#475569" max-width="600">
+      Demonstrating algorithmic mastery across Dynamic Programming, Binary Trees, Graphs, Sorting, Hash Maps, and Object-Oriented Software Engineering.
+    </text>
+  </g>
+
+  <!-- Left: Official Golden Seal -->
+  <g transform="translate(140, 480)" filter="url(#shadow_LC-KNIGHT-2026-HY)">
+    <!-- Starburst Ribbon Points -->
+    <polygon points="0,-48 14,-34 34,-34 38,-14 52,0 38,14 34,34 14,34 0,48 -14,34 -34,34 -38,14 -52,0 -38,-14 -34,-34 -14,-34" fill="url(#goldGrad_LC-KNIGHT-2026-HY)"/>
+    <circle cx="0" cy="0" r="38" fill="#ffffff" stroke="url(#goldGrad_LC-KNIGHT-2026-HY)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#d97706" stroke-width="1" stroke-dasharray="3 2"/>
+    
+    <!-- Seal Icon & Text -->
+    <text x="0" y="-8" font-family="serif" font-size="18" font-weight="bold" fill="#d97706" text-anchor="middle">★</text>
+    <text x="0" y="8" font-family="-apple-system, sans-serif" font-size="8" font-weight="bold" fill="#0f172a" text-anchor="middle" letter-spacing="0.5">OFFICIAL</text>
+    <text x="0" y="18" font-family="-apple-system, sans-serif" font-size="7" font-weight="bold" fill="#d97706" text-anchor="middle">2026</text>
+
+    <!-- Ribbons -->
+    <path d="M -12 36 L -20 70 L 0 58 L 20 70 L 12 36 Z" fill="url(#goldGrad_LC-KNIGHT-2026-HY)" opacity="0.9"/>
+  </g>
+
+  <!-- Signatures Section -->
+  <g transform="translate(520, 485)">
+    <!-- Signature 1 -->
+    <g transform="translate(0, 0)">
+      <!-- Stylized Vector Signature Curve -->
+      <path d="M 0 10 Q 25 -10 50 10 T 100 5 Q 120 -5 130 12" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-10" y1="20" x2="150" y2="20" stroke="#94a3b8" stroke-width="1"/>
+      <text x="70" y="34" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">
+        Algorithm Reviewer
+      </text>
+    </g>
+
+    <!-- Signature 2 -->
+    <g transform="translate(200, 0)">
+      <path d="M 0 8 Q 30 -15 60 8 T 110 3 Q 130 -8 140 10" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round"/>
+      <line x1="-10" y1="20" x2="150" y2="20" stroke="#94a3b8" stroke-width="1"/>
+      <text x="70" y="34" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">
+        Contest Rating Lead
+      </text>
+    </g>
+  </g>
+
+  <!-- Footer Verification Badge & ID -->
+  <g transform="translate(480, 580)" text-anchor="middle">
+    <rect x="-160" y="-14" width="320" height="20" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="0" y="0" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#475569" letter-spacing="1">
+      CREDENTIAL ID: LC-KNIGHT-2026-HY • ISSUED: 2026
+    </text>
+  </g>
+</svg>

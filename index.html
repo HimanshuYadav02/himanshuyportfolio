@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Yadav | Full Stack Developer & SDE Intern</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hardware-Accelerated Silky Smooth Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="nav" id="navbar">
+    <div class="nav-left">
+      <a href="#home" class="logo-link">
+        <img src="assets/logo.svg" alt="HY Logo" class="logo">
+        <span class="logo-divider">|</span>
+        <h3 class="logo-text">Himanshu Yadav</h3>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <!-- Dark / Light Theme Toggle -->
+      <label class="switch" title="Toggle Dark/Light Mode">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </span>
+      </label>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="close-drawer" id="closeDrawerBtn">&times;</button>
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#resume" class="mobile-link">Education</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#certifications" class="mobile-link">Certificates</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> Available for SDE Intern & Full Stack Roles
+      </div>
+      <h1 class="hero-title">Hello, I'm <span class="gradient-name">Himanshu</span></h1>
+      <p class="typewriter-container">
+        <span class="typewriter" id="typewriter"></span>
+      </p>
+
+      <p class="hero-desc">
+        Computer Science undergraduate passionate about building scalable microservices,
+        intuitive web applications, and solving complex algorithmic challenges.
+      </p>
+
+      <!-- CTA Action Buttons -->
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-laptop-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <a href="#resume" class="btn btn-outline">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+      </div>
+
+      <!-- Social Quick Links -->
+      <div class="hero-socials">
+        <a href="https://github.com/HimanshuYadav02" target="_blank" title="GitHub Profile" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/himanshu-yadav-0h20y" target="_blank" title="LinkedIn Profile" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://leetcode.com/u/Himanshu_Yadav2/" target="_blank" title="LeetCode Profile" rel="noopener">
+          <i class="fa-solid fa-code"></i>
+        </a>
+        <a href="mailto:yadavhimanshu68493@gmail.com" title="Send Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:6387547011" title="Call Himanshu">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <section class="about section-glass" id="about">
+    <div class="section-header">
+      <span class="section-tag">Overview</span>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-container">
+      <!-- LEFT PROFILE IMAGE -->
+      <div class="about-img-wrapper">
+        <div class="about-img-box">
+          <!-- When user adds assets/profile.jpg, it displays automatically! Fallback to avatar if not found -->
+          <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='assets/Himanshu.jpg';" alt="Himanshu Yadav" class="about-img" id="profileImage" onclick="openModal(this.src)">
+        </div>
+      </div>
+
+      <!-- RIGHT ABOUT CONTENT -->
+      <div class="about-content">
+        <h3>Who am I?</h3>
+        <p class="about-text">
+          I am a Computer Science undergraduate proficient in <strong>Java, Spring Boot, Data Structures</strong>, and <strong>Full Stack Web Development</strong>.
+          I demonstrate technical capabilities by actively solving <strong>200+ LeetCode problems</strong> (Knight Badge achiever) and engineering scalable, secure web applications.
+          Skilled in object-oriented design, RESTful microservices, and core CS fundamentals.
+        </p>
+
+        <!-- INFO GRID -->
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Name:</span>
+            <span class="info-val">Himanshu Yadav</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Role:</span>
+            <span class="info-val">Full Stack Web Dev / SDE Intern</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email:</span>
+            <span class="info-val"><a href="mailto:yadavhimanshu68493@gmail.com">yadavhimanshu68493@gmail.com</a></span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Phone:</span>
+            <span class="info-val"><a href="tel:6387547011">+91 6387547011</a></span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Location:</span>
+            <span class="info-val">Greater Noida, UP, India</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">College:</span>
+            <span class="info-val">Dronacharya Group of Institutions</span>
+          </div>
+        </div>
+
+        <!-- STATS CARDS -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <i class="fa-solid fa-trophy stat-icon"></i>
+            <h4>200+</h4>
+            <p><b>LeetCode DSA Solved</b></p>
+            <span class="sub-stat">Knight Badge</span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fa-solid fa-layer-group stat-icon"></i>
+            <h4>7.51</h4>
+            <p><b>B.Tech CGPA</b></p>
+            <span class="sub-stat">Computer Science</span>
+          </div>
+
+          <div class="stat-card">
+            <i class="fa-solid fa-award stat-icon"></i>
+            <h4>5+</h4>
+            <p><b>Certifications</b></p>
+            <span class="sub-stat">ISRO, Cisco, Edureka...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="skills-section section-glass" id="skills">
+    <div class="section-header">
+      <span class="section-tag">Expertise</span>
+      <h2>My Technical Skills</h2>
+      <p class="subtitle">Core engineering competencies, languages, frameworks, and tools</p>
+    </div>
+
+    <div class="skills-container">
+      <!-- LEFT SIDE (Progress Bars) -->
+      <div class="skills-left">
+        <h3 class="subsection-title"><i class="fa-solid fa-sliders"></i> Core Competencies</h3>
+        
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span>Java & OOP Concepts</span>
+            <span>90%</span>
+          </div>
+          <div class="bar"><div class="fill" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span>Data Structures & Algorithms</span>
+            <span>85%</span>
+          </div>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span>Spring Boot & RESTful APIs</span>
+            <span>85%</span>
+          </div>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span>Full Stack Web Development (React.js, Node.js)</span>
+            <span>82%</span>
+          </div>
+          <div class="bar"><div class="fill" style="width:82%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span>Databases (MySQL, PostgreSQL, MongoDB)</span>
+            <span>80%</span>
+          </div>
+          <div class="bar"><div class="fill" style="width:80%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span>Core CS: DBMS, OS, TAFL, Networks</span>
+            <span>85%</span>
+          </div>
+          <div class="bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE (TOOLS & TECHNOLOGIES GRID) -->
+      <div class="skills-right">
+        <h3 class="subsection-title"><i class="fa-solid fa-microchip"></i> Tech Stack & Tools</h3>
+        <div class="tools-grid">
+          <div class="tool-card"><i class="fa-brands fa-java" style="color: #f89820;"></i><p>Java</p></div>
+          <div class="tool-card"><i class="fa-solid fa-leaf" style="color: #6db33f;"></i><p>Spring Boot</p></div>
+          <div class="tool-card"><i class="fa-solid fa-layer-group" style="color: #6db33f;"></i><p>Spring Data JPA</p></div>
+          <div class="tool-card"><i class="fa-brands fa-react" style="color: #61dafb;"></i><p>React.js</p></div>
+          <div class="tool-card"><i class="fa-brands fa-node-js" style="color: #68a063;"></i><p>Node.js</p></div>
+          <div class="tool-card"><i class="fa-brands fa-js" style="color: #f7df1e;"></i><p>JavaScript</p></div>
+          <div class="tool-card"><i class="fa-brands fa-python" style="color: #3776ab;"></i><p>Python</p></div>
+          <div class="tool-card"><i class="fa-solid fa-code" style="color: #00599c;"></i><p>C / C++</p></div>
+          <div class="tool-card"><i class="fa-solid fa-database" style="color: #38bdf8;"></i><p>SQL</p></div>
+          <div class="tool-card"><i class="fa-solid fa-database" style="color: #00758f;"></i><p>MySQL</p></div>
+          <div class="tool-card"><i class="fa-solid fa-server" style="color: #47a248;"></i><p>MongoDB</p></div>
+          <div class="tool-card"><i class="fa-solid fa-database" style="color: #336791;"></i><p>PostgreSQL</p></div>
+          <div class="tool-card"><i class="fa-brands fa-git-alt" style="color: #f05032;"></i><p>Git</p></div>
+          <div class="tool-card"><i class="fa-brands fa-github" style="color: #ffffff;"></i><p>GitHub</p></div>
+          <div class="tool-card"><i class="fa-solid fa-laptop-code" style="color: #007acc;"></i><p>VS Code</p></div>
+          <div class="tool-card"><i class="fa-solid fa-cube" style="color: #fe315d;"></i><p>IntelliJ IDEA</p></div>
+          <div class="tool-card"><i class="fa-solid fa-robot" style="color: #43b02a;"></i><p>Selenium</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUME / EDUCATION SECTION ================= -->
+  <section class="resume-section section-glass" id="resume">
+    <div class="section-header">
+      <span class="section-tag">Academic Background</span>
+      <h2>Education & Qualifications</h2>
+      <p class="subtitle">Academic milestones and educational foundation</p>
+    </div>
+
+    <div class="timeline">
+      <!-- ITEM 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Bachelor of Technology in Computer Science & Information Technology</h3>
+            <span class="time-badge">Sep. 2024 – Present</span>
+          </div>
+          <p class="institute"><i class="fa-solid fa-building-columns"></i> Dronacharya Group of Institutions, Greater Noida, UP</p>
+          <div class="score-pill">
+            <i class="fa-solid fa-star"></i> CGPA: <strong>7.515 / 10.0</strong> across coursework
+          </div>
+          <p class="timeline-desc">
+            Focused on advanced data structures, algorithms, object-oriented design, operating systems, database management systems, and enterprise web engineering.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Class XII (Senior Secondary) – UP Board</h3>
+            <span class="time-badge">2024</span>
+          </div>
+          <p class="institute"><i class="fa-solid fa-school"></i> ASHT Shahid Inter College, Mohammadabad, Ghazipur</p>
+          <div class="score-pill">
+            <i class="fa-solid fa-circle-check"></i> Secured <strong>79.6%</strong> aggregate marks
+          </div>
+          <p class="timeline-desc">
+            Rigorous focus on Mathematics, Physics, Chemistry, and analytical problem-solving foundations.
+          </p>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Class X (Secondary School) – UP Board</h3>
+            <span class="time-badge">2022</span>
+          </div>
+          <p class="institute"><i class="fa-solid fa-school"></i> ASHT Shahid Inter College, Mohammadabad, Ghazipur</p>
+          <div class="score-pill">
+            <i class="fa-solid fa-circle-check"></i> Secured <strong>83.5%</strong> aggregate marks
+          </div>
+          <p class="timeline-desc">
+            Excellence in Science and Mathematics, laying the groundwork for engineering studies.
+          </p>
+        </div>
+      </div>
+
+      <!-- RESUME DOWNLOAD BUTTON -->
+      <div class="cv-download-wrapper">
+        <a href="assets/Himanshu_Yadav_Resume.pdf" class="cv-btn" id="downloadCvBtn">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Himanshu's Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section class="projects-section section-glass" id="projects">
+    <div class="section-header">
+      <span class="section-tag">Portfolio</span>
+      <h2>Featured Projects</h2>
+      <p class="subtitle">Scalable enterprise systems, financial trackers, and administration portals</p>
+    </div>
+
+    <div class="projects-container">
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+        <div class="project-top">
+          <i class="fa-solid fa-server project-icon"></i>
+          <span class="project-date">Jun 2026 – Sep 2026</span>
+        </div>
+        <h3>Enterprise Management System</h3>
+        <p class="project-role">Enterprise Backend & Management Application</p>
+        
+        <p class="project-desc">
+          Architected RESTful web services (Employee API & Auth API) utilizing Spring Boot framework. Automated web interactions using Selenium Chrome instances for accurate DOM element parsing. Executed full CRUD functionalities with Spring Data JPA and Hibernate for enterprise ORM.
+        </p>
+
+        <div class="project-tech-tags">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>MySQL</span>
+          <span>REST API</span>
+          <span>Selenium</span>
+          <span>Hibernate</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/" target="_blank" class="btn btn-project-demo">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+          </a>
+          <a href="https://github.com/" target="_blank" class="btn btn-project-code">
+            <i class="fa-brands fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+        <div class="project-top">
+          <i class="fa-solid fa-wallet project-icon"></i>
+          <span class="project-date">Aug 2026 – Oct 2026</span>
+        </div>
+        <h3>Expanse Tracker</h3>
+        <p class="project-role">Full-Stack Financial Tracking Application</p>
+        
+        <p class="project-desc">
+          Engineered a responsive SPA using React.js for real-time tracking of income and expenses. Created scalable RESTful APIs with Node.js and Express.js. Enforced JWT authentication and bcrypt password hashing to secure user accounts. Modeled fine-tuned MongoDB document schemas for reports.
+        </p>
+
+        <div class="project-tech-tags">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
+          <span>REST API</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/" target="_blank" class="btn btn-project-demo">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+          </a>
+          <a href="https://github.com/" target="_blank" class="btn btn-project-code">
+            <i class="fa-brands fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card">
+        <div class="project-top">
+          <i class="fa-solid fa-graduation-cap project-icon"></i>
+          <span class="project-date">Jul 2026 – Sep 2026</span>
+        </div>
+        <h3>Student Management System</h3>
+        <p class="project-role">Comprehensive Educational Administration Portal</p>
+        
+        <p class="project-desc">
+          Built an administrative web platform to manage student enrollment, course details, and academic metrics. Established secure API endpoints for data operations and streamlined MySQL queries for efficient record retrieval and real-time dashboard analytics.
+        </p>
+
+        <div class="project-tech-tags">
+          <span>Spring Boot</span>
+          <span>React.js</span>
+          <span>MySQL</span>
+          <span>HTML5/CSS3</span>
+          <span>REST API</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/" target="_blank" class="btn btn-project-demo">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview
+          </a>
+          <a href="https://github.com/" target="_blank" class="btn btn-project-code">
+            <i class="fa-brands fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS & ACHIEVEMENTS SECTION ================= -->
+  <section class="cert-section section-glass" id="certifications">
+    <div class="section-header">
+      <span class="section-tag">Credentials</span>
+      <h2>Certifications & Achievements</h2>
+      <p class="subtitle">Recognitions and verified accomplishments from IIRS (ISRO), Cisco, Edureka, and Great Learning</p>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Data & AI">Data & AI</button>
+      <button class="filter-btn" data-filter="Web Dev">Web Dev</button>
+      <button class="filter-btn" data-filter="Cybersecurity">Cybersecurity</button>
+      <button class="filter-btn" data-filter="Core CS">Core CS</button>
+      <button class="filter-btn" data-filter="Algorithms">Algorithms</button>
+    </div>
+
+    <!-- Certificate Cards -->
+    <div class="cert-container">
+      <!-- CARD 1: IIRS (ISRO) -->
+      <div class="cert-card" data-category="Data & AI">
+        <div class="cert-img-container" onclick="openModal('assets/himanshu-cert-isro.svg')">
+          <img src="assets/himanshu-cert-isro.png" class="cert-img" alt="IIRS ISRO Certificate">
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> Click to View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge-row">
+            <span class="cert-cat">Data & AI</span>
+            <span class="cert-year">2026</span>
+          </div>
+          <h4>IIRS (ISRO)</h4>
+          <p class="cert-title">Geodata Processing using Python and MI</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Machine Intelligence</span>
+            <span>Geodata</span>
+            <span>Remote Sensing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: CISCO NETWORKING ACADEMY -->
+      <div class="cert-card" data-category="Cybersecurity">
+        <div class="cert-img-container" onclick="openModal('assets/himanshu-cert-cisco.svg')">
+          <img src="assets/himanshu-cert-cisco.png" class="cert-img" alt="Cisco Cybersecurity Certificate">
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> Click to View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge-row">
+            <span class="cert-cat">Cybersecurity</span>
+            <span class="cert-year">2025</span>
+          </div>
+          <h4>Cisco Networking Academy</h4>
+          <p class="cert-title">Introduction to Cybersecurity</p>
+          <div class="tags">
+            <span>Network Security</span>
+            <span>Threat Defense</span>
+            <span>Data Privacy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: EDUREKA -->
+      <div class="cert-card" data-category="Web Dev">
+        <div class="cert-img-container" onclick="openModal('assets/himanshu-cert-edureka.svg')">
+          <img src="assets/himanshu-cert-edureka.png" class="cert-img" alt="Edureka Full Stack Certificate">
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> Click to View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge-row">
+            <span class="cert-cat">Web Dev</span>
+            <span class="cert-year">2025</span>
+          </div>
+          <h4>Edureka</h4>
+          <p class="cert-title">Full Stack Development Internship Program</p>
+          <div class="tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>React.js</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: GREAT LEARNING -->
+      <div class="cert-card" data-category="Core CS">
+        <div class="cert-img-container" onclick="openModal('assets/himanshu-cert-greatlearning.svg')">
+          <img src="assets/himanshu-cert-greatlearning.png" class="cert-img" alt="Great Learning Certificate">
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> Click to View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge-row">
+            <span class="cert-cat">Core CS</span>
+            <span class="cert-year">2025</span>
+          </div>
+          <h4>Great Learning</h4>
+          <p class="cert-title">Computer Architecture And Digital Components</p>
+          <div class="tags">
+            <span>Computer Architecture</span>
+            <span>Digital Logic</span>
+            <span>Processors</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: LEETCODE KNIGHT -->
+      <div class="cert-card" data-category="Data Analytics ">
+        <div class="cert-img-container" onclick="openModal('assets/himanshu-cert-leetcode.svg')">
+          <img src="assets/cert-tata.png" class="cert-img" alt="GenAI Powered Data Analytics Job Simulation">
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> Click to View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge-row">
+            <span class="cert-cat">Data Analytics</span>
+            <span class="cert-year">2025</span>
+          </div>
+          <h4></h4>
+          <p class="cert-title">TATA</p>
+               <p class="cert-title">GenAI Powered Data Analytics Job Simulation</p>
+          <div class="tags">
+            <span>GenAI</span>
+            <span>Cybersecurity</span>
+            
+          </div>
+        </div>
+      </div>
+    
+
+
+  <!-- CARD 4: Java Developer -->
+      <div class="cert-card" data-category="Core CS">
+        <div class="cert-img-container" onclick="openModal('assets/himanshu-cert-greatlearning.svg')">
+          <img src="assets/chatgpt.png" class="cert-img" alt="Great Learning Certificate">
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> Click to View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-badge-row">
+            <span class="cert-cat">chatgpt for EveryOne  </span>
+            <span class="cert-year">2026</span>
+          </div>
+          <h4>Qveto Technology</h4>
+          <p class="cert-title">chatgpt  </p>
+          <div class="tags">
+            <span> AI</span>
+            <span>Modern Technology </span>
+            
+          </div>
+        </div>
+      </div>
+
+
+</div>
+
+    <!-- Verification Drive Link -->
+    <div class="cert-drive-link">
+      <a href="https://drive.google.com/drive/u/0/folders/1Em67_crPxJG9tZmvYt-sA12_G-Vxa8td" target="_blank" class="drive-btn" rel="noopener">
+        <i class="fa-brands fa-google-drive"></i> View All Certification Credentials (Drive Link)
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="contact-section section-glass" id="contact">
+    <div class="section-header">
+      <span class="section-tag">Get in Touch</span>
+      <h2>Contact Me</h2>
+      <p class="subtitle">Feel free to reach out for SDE opportunities, projects, or collaborations</p>
+    </div>
+
+    <div class="contact-container">
+      <!-- LEFT SIDE (INFO BOXES) -->
+      <div class="contact-info">
+        <div class="info-box">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>yadavhimanshu68493@gmail.com</p>
+          <button class="copy-btn" onclick="copyText('yadavhimanshu68493@gmail.com', this)">
+            <i class="fa-regular fa-copy"></i> Copy Email
+          </button>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p>+91 6387547011</p>
+          <a href="tel:6387547011" class="call-btn">
+            <i class="fa-solid fa-phone-volume"></i> Call Now
+          </a>
+        </div>
+
+        <div class="info-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Location</h3>
+          <p>Greater Noida, UP, India</p>
+          <span class="location-sub">Open to Relocation & Remote</span>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE (CONTACT FORM) -->
+      <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <input type="text" id="nameInput" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="emailInput" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subjectInput" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea id="messageInput" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box brand-box">
+        <h2>HY | Himanshu Yadav</h2>
+        <p>
+          Computer Science Undergraduate & SDE Intern specializing in Java, Spring Boot, React, and scalable backend architecture. Let's engineer impactful digital experiences together.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul class="footer-nav">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills & Tech</a></li>
+          <li><a href="#resume">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-phone"></i> +91 6387547011</p>
+        <p><i class="fa-solid fa-envelope"></i> yadavhimanshu68493@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Greater Noida, UP, India</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Connect & Code</h3>
+        <p>Check out my code repositories and problem-solving activity:</p>
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank" title="GitHub" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" title="LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/" target="_blank" title="LeetCode" rel="noopener"><i class="fa-solid fa-code"></i></a>
+          <a href="mailto:yadavhimanshu68493@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Himanshu Yadav. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= POPUP MODAL FOR CERTIFICATES / IMAGES ================= -->
+  <div id="imgModal" class="modal" role="dialog" aria-modal="true">
+    <span class="close-modal-btn" onclick="closeModal()">&times;</span>
+    <img id="modalImg" alt="Enlarged Certificate Credential">
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
+</html>
